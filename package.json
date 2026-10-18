@@ -1,0 +1,13 @@
+{
+  "name": "town-centre",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An AoE2 1v1 tournament organiser with private, in-browser AI availability extraction.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/core.test.mjs && node test/ui.test.mjs && node test/ai.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/core.js && node --check dist/ai.js && node --check dist/ai-worker.js && node --check server.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
